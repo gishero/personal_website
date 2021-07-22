@@ -18,34 +18,86 @@
     />
     <title>My Portfolio</title>
   </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-light">
+  <body data-spy="scroll" data-target=".navbar">
+    <!-- Scrolling Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#section1">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
+          <a class="nav-link" href="#section2">Background</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Resume</a>
+          <a class="nav-link" href="#section3">Projects</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbardrop"
+            data-toggle="dropdown"
+          >
+            Links
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#section41">Resume</a>
+            <a class="dropdown-item" href="#section42">GitHub</a>
+          </div>
         </li>
       </ul>
     </nav>
-    <h1 class="display-3" align="center">Gishan Ruwanpathirana</h1>
-    <br />
-    <!-- Image -->
-    <img src="static/images/gishan_ruwanpathirana.jpg" class="img-fluid"
-    height=900px" width="900px" align="center" border="2px" alt="profile
-    picture" />
-    <hr />
-    <div class="jumbotron">
-      <p>
-        Freshly graduated Mechatronics Engineer with a passion for technology
-        and eager to join the industry
-      </p>
+    <div
+      id="Home"
+      class="container-fluid"
+      style="
+        padding-top: 70px;
+        padding-bottom: 70px;
+        background-color: slateblue;
+      "
+    >
+      <h1 class="display-3" align="center">Gishan Ruwanpathirana</h1>
+      <br />
+      <!-- Image -->
+      <img
+        src="static/images/gishan_ruwanpathirana.jpg"
+        alt=""
+        class="img-fluid;"
+      />
+      <hr />
+      <div class="jumbotron">
+        <h2 class="text-center">Who am I?</h2>
+        <br />
+        <p class="text-justify">
+          I am a freshy graduated <strong>Mechatronics Engineer</strong>
+          <i class="fas fa-robot"></i> with a genuine passion and interest in
+          technology, collecting the skills to have a meaningful impact on the
+          world through my career.
+        </p>
+      </div>
     </div>
-    <p></p>
+    <div
+      id="Background"
+      class="container-fluid"
+      style="
+        padding-top: 70px;
+        padding-bottom: 70px;
+        background-color: slateblue;
+      "
+    >
+      <h1>Background</h1>
+      I studied at Monash University <i class="fas fa-university"></i> and RMIT
+    </div>
+    <div
+      id="Projects"
+      class="container-fluid"
+      style="
+        padding-top: 70px;
+        padding-bottom: 70px;
+        background-color: slateblue;
+      "
+    >
+      <h1>Projects</h1>
+    </div>
   </body>
 </html>
